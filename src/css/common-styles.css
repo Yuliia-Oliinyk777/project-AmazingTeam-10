@@ -1,0 +1,27 @@
+/*======= COMMON_STYLES =======*/
+body {
+  font-family: 'Manrope', sans-serif;
+  color: #fcf9f9;
+  background-color: #1c2225;
+}
+.container {
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

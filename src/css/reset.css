@@ -20,7 +20,7 @@ ul {
 }
 
 a {
-  color: currentColor;
+  display: block;
   text-decoration: none;
 }
 
