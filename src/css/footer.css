@@ -1,7 +1,10 @@
 .footer-page {
   padding-top: 40px;
+  background-image: url(../images/footer/footer-bg-mobile1x.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
-@media screen and (max-width: 375) {
+@media screen and (max-width: 375px) {
   .footer-nav-list {
     display: grid;
     grid-template-columns: 116px 124px;
@@ -39,6 +42,7 @@
   line-height: 1.22;
   letter-spacing: -0.03em;
   margin-bottom: 80px;
+  max-width: 335px;
 }
 .footer-span-text {
   color: #ecd979;
