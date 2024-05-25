@@ -1,0 +1,98 @@
+.order-image-bg {
+  max-width: 1280px;
+  height: 776px;
+  background-image: url(/images/order/Image-green-desktop1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+@media screen and (min-resolution: 192dpi){
+  .order-image-bg {
+    background-image: url(/images/order/Image-green-desktop@2x.jpg);
+  }
+}
+.order-bg {
+  position: absolute;
+  z-index: -2;
+  top: 306px;
+  left: -50px;
+}
+.section-order {
+  position: relative;
+  padding: 150px 0;
+  display: flex;
+  gap: 50px;
+}
+.order-image {
+  border-radius: 4px;
+  width: 588px;
+  height: 521px;
+}
+.order-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.order-text {
+  max-width: 542px;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1.31;
+  letter-spacing: -0.03em;
+}
+.order-accent {
+  color: #ecd979;
+}
+.order-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.order-input {
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 14px 16px;
+  width: 508px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  outline: transparent;
+  color: rgba(252, 249, 249, 0.5);
+}
+.order-input::placeholder,
+.order-coments::placeholder {
+  color: rgba(252, 249, 249, 0.5);
+}
+.order-coments {
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  color: rgba(252, 249, 249, 0.5);
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 14px 16px;
+  width: 508px;
+  height: 196px;
+  outline: transparent;
+  resize: none;
+}
+.order-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  outline: none;
+  border-radius: 15px;
+  padding: 14px 39px;
+  max-width: 168px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #fcf9f9;
+  background-color: transparent;
+  cursor: pointer;
+}
