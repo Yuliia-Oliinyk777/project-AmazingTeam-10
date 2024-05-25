@@ -1,0 +1,185 @@
+.order-image-bg {
+  min-width: 100%;
+  height: 500px;
+  background-image: url(/images/order/Image-green-mobile1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+@media screen and (min-resolution: 192dpi) {
+  .order-image-bg {
+    background-image: url(/images/order/Image-green-mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .order-image-bg {
+    background-image: url(../images/order/Image-green-tablet1x.jpg);
+    height: 776px;
+  }
+}
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .order-image-bg {
+    background-image: url(../images/order/Image-green-tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .order-image-bg {
+    background-image: url(../images/order/Image-green-desktop1x.jpg);
+  }
+}
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+  .order-image-bg {
+    background-image: url(/images/order/Image-green-desktop@2x.jpg);
+  }
+}
+
+/* ========================================================================================================================================================
+ORDER
+======================================================================================================================================================== */
+
+.order-bg {
+  display: none;
+}
+.section-order {
+  position: relative;
+  padding: 80px 20px;
+  display: flex;
+  gap: 50px;
+  overflow: hidden;
+}
+.order-image {
+  display: none;
+}
+.order-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+}
+.order-text {
+  max-width: 335px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  font-size: 32px;
+  line-height: 1.375;
+}
+.order-accent {
+  color: #ecd979;
+}
+.order-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.order-input {
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 14px 16px;
+  width: 100%;
+  height: 47px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  outline: transparent;
+  color: #fcf9f9;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.order-input::placeholder,
+.order-coments::placeholder {
+  color: rgba(252, 249, 249, 0.5);
+}
+.order-input:focus,
+.order-comments:focus {
+  border: 1px solid rgba(252, 249, 249, 0.6);
+}
+.order-comments {
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  color: #fcf9f9;
+  background-color: transparent;
+  border-radius: 15px;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  padding: 14px 16px;
+  width: 335px;
+  height: 196px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.order-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  outline: none;
+  border-radius: 15px;
+  padding: 14px 39px;
+  max-width: 145px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #fcf9f9;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.order-submit:hover,
+.order-submit:focus {
+  border-color: #ecd979;
+}
+@media screen and (min-width: 768px) {
+  .section-order {
+    padding: 100px 32px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+  .order-bg {
+    display: block;
+    position: absolute;
+    z-index: -2;
+    bottom: 0;
+    left: 0px;
+  }
+  .order-image {
+    display: block;
+    border-radius: 4px;
+    width: 704px;
+    height: 521px;
+  }
+  .order-text {
+    max-width: 542px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    font-size: 44px;
+    line-height: 1.31;
+  }
+  .order-input,
+  .order-comments {
+    font-size: 16px;
+    width: 508px;
+  }
+  .order-submit { 
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+
+  .section-order {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 100px 50px 150px;
+    gap: 50px;
+  }
+  .order-bg {
+    bottom: 150px;
+    left: 0;
+  }
+}
