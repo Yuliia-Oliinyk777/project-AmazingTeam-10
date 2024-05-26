@@ -24,8 +24,6 @@
 
 .page-header-social-list {
   display: flex;
-  padding-top: 4px;
-  padding-bottom: 4px;
   gap: 12px;
   align-items: center;
   justify-content: center;
