@@ -37,8 +37,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:focus,
-.hero-button:hover {
+.hero-button:focus {
   border-color: #ecd979;
 }
 
@@ -115,10 +114,18 @@
     margin-bottom: 0;
   }
 
+  .hero-button:hover {
+    border-color: #ecd979;
+  }
+
   .hero-img {
     max-width: 392px;
     height: 545px;
     margin-right: 40px;
+  }
+
+  .hero-star {
+    top: 114px;
   }
 }
 
