@@ -41,6 +41,7 @@
     border-radius: 15px;
     width: 160px;
     height: 38px;
+    padding: 12px 20px;
     margin-bottom: 186px;
 }
 
@@ -49,14 +50,13 @@
     line-height: 1.17;
     text-transform: uppercase;
     color: #1c2225;
-    padding: 12px 20px;
 }
 
 .mobile-menu-btn-close {
     stroke-width: 2px;
     stroke: #1c2225;
     position: absolute;
-    top: 21px;
+    top: 20px;
     right: 20px;
     background-color: transparent;
     border: none;
@@ -92,15 +92,14 @@
 .mobile-tab-menu-address{
     width: 195px;
     height: 48px;
+    padding: 14px 28px;
     margin-bottom: 223px;
 }
 .mobile-menu-tel{
-    padding: 14px 28px;
     font-size: 14px; 
     line-height: 1.43;
 }
 .mobile-menu-btn-close{
-    top: 20px;
     right: 32px;
 }
 .icon-close-mobile{
@@ -109,7 +108,13 @@
 }
 }
 @media screen and (min-width: 768px) and (min-resolution:192dpi) {
-    .mobile-tab-menu {
-        background-image: url(/images/menu/menu-bg-tablet@2x.png);
+.mobile-tab-menu {
+    background-image: url(/images/menu/menu-bg-tablet@2x.png);
     }
+}
+
+@media screen and (min-width: 1280px) {
+.overlay-menu{
+    display: none;
+}
 }
