@@ -1,6 +1,7 @@
 .collection-container {
   padding-top: 18px;
   padding-bottom: 80px;
+  background-image: url(/images/our-collection/our-collection-bg-mobile.png);
 }
 .collection-title {
   font-size: 32px;
@@ -37,13 +38,18 @@
   text-transform: uppercase;
   color: rgba(252, 249, 249, 0.4);
 }
-
+@media screen and(max-width: 767px) and (min-resolution: 192dpi) {
+  .collection-container {
+    background-image: url(/images/our-collection/our-collection-bg-mobile@2x.png);
+  }
+}
 /*------------------TABLET--------------*/
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .collection-container {
     padding-top: 50px;
     padding-bottom: 100px;
+    background-image: url(/images/our-collection/our-collection-bg-tablet1x.png);
   }
 
   .collection-list {
@@ -60,12 +66,16 @@
     font-size: 18px;
   }
 }
-/*--------------------DESKTOP-----------------*/
-
-@media (min-width: 1280px) {
+@media screen and (min-resolution: 192dpi) {
+  .collection-container {
+    background-image: url(/images/our-collection/our-collection-bg-tablet@2x.png);
+  }
+}
+@media screen and (min-width: 1280px) {
   .collection-container {
     padding-top: 70px;
     padding-bottom: 150px;
+    background-image: url(/images/our-collection/our-collection-bg-desktop1x.png);
   }
   .collection-list {
     row-gap: 40px;
@@ -73,5 +83,10 @@
 
   .collection-card {
     width: calc((100% - 40px) / 3);
+  }
+}
+@media screen and (min-resolution: 192dpi) {
+  .collection-container {
+    background-image: url(/images/our-collection/our-collection-bg-desktop@2x.png);
   }
 }
