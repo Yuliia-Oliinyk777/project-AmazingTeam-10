@@ -2,24 +2,15 @@
     padding-bottom: 80px;
 }
 
-.container {
-    max-width: 375px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
-}
 
 .main-title {
     font-size: 32px;
     font-weight: 500;
     line-height: 1.38;
-    letter-spacing: -.03em;
+    letter-spacing: -0.03em;
     margin-bottom: 64px
 }
 
-.testimonials-list {
-    list-style-type: none;
-}
 
 .testimonials-list li:nth-child(2),
 .testimonials-list li:nth-child(3) {
@@ -28,8 +19,8 @@
 
 .testimonials-card {
 border-radius: 4px;
-border: 1px solid rgba(252, 249, 249, .1);
-padding: 54px 18px 18px;
+border:  1px solid rgba(252, 249, 249, .1);
+padding:  54px 22px 18px 22px;
 position: relative;
 }
 
@@ -51,7 +42,7 @@ position: relative;
 }
 
 .testimonials-card-text {
-    color: #fcf9f966;
+    color: rgba(252, 249, 249, 0.4);
     text-align: center;
     font-size: 14px;
     font-style: normal;
@@ -67,21 +58,8 @@ position: relative;
         padding-bottom: 100px;
     }
 
-    .container {
-        max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
-    .main-title {
-        font-size: 44px;
-        line-height: 1.45;
-        letter-spacing: -0.03em;
-    }
-
     .testimonials-list {
         display: flex;
-        flex-direction: row;
         gap: 32px;
     }
 
@@ -90,15 +68,16 @@ position: relative;
     }
 
     .testimonials-card {
-    width: calc((100% - 32px * 1) / 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 336px;
     }
 
-    .testimonials-item-text {
+    .testimonials-card-text {
         font-size: 16px;
         width: 300px;
     }
-
-
 
 }
 
@@ -107,21 +86,22 @@ position: relative;
         padding-bottom: 150px;
     }
 
-    .container {
-        max-width: 1110px;
-    }
-
     .testimonials-list {
         gap: 26px;
     }
+
+    .testimonials-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 343px;
+    }
+
 
     .testimonials-list li:nth-child(3) {
         display: block;
     }
 
-    .testimonials-card {
-        width: calc((100% - 26px * 2) / 3);
-    }
 
     .testimonials-card-text {
         font-size: 16px;
