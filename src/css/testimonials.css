@@ -92,7 +92,7 @@ position: relative;
 
     .testimonials-list {
         gap: 26px;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .testimonials-card {
