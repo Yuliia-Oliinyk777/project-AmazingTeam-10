@@ -5,7 +5,6 @@
   padding-bottom: 80px;
   background-image: url(../images/about-us/about-us-bg-mobile.png);
   background-repeat: no-repeat;
-  background-size: 459px 408px;
   background-position: right bottom;
 }
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
@@ -13,14 +12,12 @@
     background-image: url(../images/about-us/about-us-bg-mobile@2x.png);
   }
 }
-.container-text {
-}
+
 .about-title {
   font-weight: 500;
   font-size: 32px;
   line-height: 1.37;
   letter-spacing: -0.03em;
-  color: #fcf9f9;
   margin-bottom: 40px;
 }
 .about-text {
@@ -29,14 +26,12 @@
   color: rgba(252, 249, 249, 0.4);
   margin-top: 20px;
 }
-.about-us-photo {
-}
+
 @media screen and (min-width: 768px) {
   .container-about-us {
     padding-bottom: 100px;
     gap: 40px;
     background-image: url(../images/about-us/about-us-bg-tablet.png);
-    background-size: 545px 484px;
   }
   .about-title {
     font-size: 44px;
