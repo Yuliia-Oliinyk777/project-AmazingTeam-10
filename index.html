@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/png;base64,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" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vyshyvanka Vibes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    
+    <script type="module" crossorigin src="/project-AmazingTeam-10/commonHelpers.js"></script>
+    <link rel="stylesheet" href="/project-AmazingTeam-10/assets/index-93939ebc.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAoCAYAAACFFRgXAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAjUSURBVHgBzVndbhvHFZ6ZpRQ6bmESUmL0yrSBOEpRwOwTmH4CqU8g+glMXbS2nAvLF4mi9kLUE1h6glBPYOoJQgFF/ROgpq8KJBJEx7FNidqZft/ZnfWIXP60vekBDO1yds6cmfnOd36sj188eBQP4v3P//C3jkrl52f3a8bo2/7dxfZw8fd/bakckW+1urWwtLWTN37y7H7FGr1q3vd3yn9s9vK+oQ3h+/C3R88e1LVR12RMOVU3BXPND/4LC5jILDulN/iP4y4wfli4MadNg/NGjP2hUYqNqYqeK5evjNMha0CHX/O8+EmVc/2w1uq2HzcLS99dX1za2veD88Y8dU41MoMiXf9saWtNTZbKnDGvTn5cv7Axe6m4jT/fT5mraIO2NrtBDRvsp8V7wfhdFVuxwfgff3r5sHr0cv2pw+LpT73IqFrv1w+HakaxVjUBkQ0+UxeOf2XWubiJHe1UcDC6fvRiPdvsQLk27SnwBTirKRx7bFWN7zC6o5xtl7/YOgiVEkvhe9Tvt86A7yiKeDormFfVWie+4FTNUZNSXeVcW7159+YEhxLHturnY7z72VdbbT5/fvPbDuzoxUrf4kadcxX8XOKaXKf81VaXusRgq/Wqsy4zBsBuwYkeD5+CMvrJhfcrl59evfFNCwt14nGn6Vx3kVeqxLmWoWMjO0OndvGn7d9To+4ev1jHZhUxXJI1f3PpFZ7l8AwGX4VXx2P/BV6at3Y0Zyr4k2HNDmwbp3aPC3EsO93MINuI5qM6nwUicJyPG7Erbz/0c33DzJmac7aZreN06/j5/W0ZI2Zx/NxNVyu3oYDZ62Pop3zjm9f4swfDdmVNzI2VW4GyexwD/e0AyOLA1BWf2wN1eq4T2tLVdJ0exwZOTV7HqX2wgxjNeWAIYQ0NYONZ95SN22CLP6kZhFi01mYOAcN57Xf+129H5pLDtX7qtK7A6l2BFg3Gv1X1fyyE09HzB+I/hph9+/7D/vBHJ68elfjhT3//c3VWxccv17dDWjt5fn951rn0hZ9TnA6LVXpt4JyQQKH8xeZBroZ+Hx5qalHBrMKIkqef3MWwubh/CsfVtZDWrIm6mPtm0lwKqQsUt6KB/Dwh5fnngpoiDIlwEgK+PfajZHNP4Bx8y5Tjva6Jv0lzKaAuK1OnfKeCSDdRtEQdlzckyRPCMp8JL8+5i19uag1Hwdwa55788+trw3N5suP0/ucGF4u9SKm6ZqQaI8QsdkMOl2/75/Z1OG6d2/PUFA9s8+gffxkfqrG5SLmmmiIZJJgdMUvy7+f9vgL29mBUFdgCkbvq8LfgwzpW6mGxVnnpu71h5cQunKkXO4Rj+IMuFHrAdG8E0wjdcKq9qH/aYbo6rCPXYBrALCkY6+Lf9YWbm2uSQwRhOfsWmAW+m8imRsN4KuXEYe4wojreGAyn3vAbz8s0Ns+GXIMLxWJHnZ/VkHHtphmb0Jo9O19jplQ0mgsJ/eCq6wSewMC6AzWDGKPqcYx8ReuVaXpFABGLDM6/ymYi88jw9BhRytcf94TinG25xNNLpCbSGnZV4ZinH0lM6FDg798lCUsm1DWc1clJY36chO32BL0J7GADv/V0BsdcMVG0ynmGVw0vzxJvZGlrzNayjZLWkM0lxyT0U/MZWF7Jg/SwNpLVpXIVZVZkk0Q8V28q0XyhcTUsybS6R4qUx4xWAPxZY/w4kYwsWBhSB73tqf9SeFueMr0kGE4oJduR0E+hkIXVCJspY+Gjlw/l5LSNO3lFJ7K1xzi1Lnk7wbcdwbdExcFgO09vtt6792tye6TWs7O6VWrDV0IFTymLKX0wdwD9LGdXADxbH26trcAYZFCmCic4LICGQlgIjf349ZU4jit5NCcn1j8lZOp5elVqVHzpExYFh/CrLl4vUOtI8E7pp5LtFtErzDeOkTUh3avLGJL2NEeeSRgVpYKeojc5KLex8OVHuvTUmkU60saQsVJFsAill0plAvmFVYJ1En59xaFmkKDimKo3sdg0ZE4qb1HXcd5HHoYiq9xuduTO9co3Nl+nO1tGzVfhz6wScF1twRWUphWHmtZIcaw4lOugbGpRb3pqJfQ8Kr6ZAz8Sven6KLFcBre0OunpCYciTZW5yDzxns+E5sKpPX/AUr7KzQ2svTPCyWykfHqJc7/H4l1821y4+W22sTCCwlkb5t37vXHdIS9jkx+eDJsjQzR1QUiDOikWpzZSzHxUC40dFjhUM75UnNp0mS29BJOQpvKGYm32I5yOPDu1cZKWW0JVSC3JBjIXfYnhudIcGaN3rMF0tpOcvpgXLoiEpFUeEwAkfMbxvjRLgNPYuZpKNil5gWVDBnPzrpoQEr0yd3waS6r1pZphdhSG5pEdGdWYdJUU9iWSKOk6Q0MbM/TlUmiJ0fk2zBe2TSESNhKWAOCbcKCsWvBGoEqo9HKuMmnHmiw6OY3S/ebmnbfvPmRtAqEuzB337bBO0lppqMOZMAzTTV1iWyszWBocwBvpJezN5gUFcic2uJz2voiZtu88/rZYXEGmxbktO4jrl+fm9j1dkgIV13GqxHXOrNsLWcXTVngolm1fp9iTyNY3QjdspLADlNObDUV6x+RUH7YxFyGTfbgd6Q9HyL6MkRyEuqL5uduqf9qTiGVtJ12HXZwNsMrtieskxjb8Ok4lnGym9WZDIXVZ67K6zFPVOAoMqSqgQC+7cUJ7IzKpRy2QYG82su4Q+EoVSJVcRaC40Lpi/A/fCRnSGKJTQ40TraXvjIS93j893ysWdNsP9c/dBcixR41cfFtgkAh71Cthj1oMntqb9ZjOaboAn4RSVingitrJc1LiK+Ym6cmnmO2qHJnWo5ZMDxlbFjhSarobxG/fm72lZpQoMk2fsKe62rPOZY86tuiepsKqJ6REX8lIfzjsgU3qzU6QLAMLfxzJwMbItB710YuHLRSgYgMg4XYHQQOEuASloDebnjQAhUxt7P9zwAkPQDU9n4GFEmZ2eaH5owA+0jJI5df+xd4xScGoHzj+b1VzxIZHn88FAAAAAElFTkSuQmCC" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vyshyvanka Vibes</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
-  
-  <script type="module" crossorigin src="/project-AmazingTeam-10/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/project-AmazingTeam-10/assets/index-93939ebc.css">
-</head>
-
-<body>
-  <!-- ========== HEADER ========== -->
+  <body>
+    <!-- ========== HEADER ========== -->
 
 <header class="page-header">
   <div class="container page-header-container">
@@ -87,7 +91,12 @@
         </a>
       </li>
     </ul>
-    <button class="mobile-open-btn" type="button">
+    <button
+      class="mobile-open-btn js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      type="button"
+    >
       <svg class="mobile-open-btn-icon">
         <use href="/project-AmazingTeam-10/assets/symbol-defs-cf4f0bd7.svg#icon-nav-burger"></use>
       </svg>
@@ -95,8 +104,8 @@
   </div>
 </header>
 
-  <main>
-    <section class="hero">
+    <main>
+      <section class="hero">
   <div class="hero-wrap container">
     <div>
       <h1 class="hero-text">
@@ -140,7 +149,7 @@
   </div>
 </section>
 
-    <section class="about-us" id="about-us">
+      <section class="about-us" id="about-us">
   <div class="container container-about-us">
     <div class="container-text">
       <h2 class="about-title">About Us</h2>
@@ -183,7 +192,7 @@
   </div>
 </section>
 
-    <section class="section">
+      <section class="section">
   <div class="container collection-container">
     <h2 class="collection-title" id="our-collection">Our collection</h2>
     <ul class="collection-list">
@@ -288,7 +297,7 @@
     </ul>
   </div>
 </section>
-    <section class="section-order">
+      <section class="section-order">
   <div class="order-image-bg"></div>
   <div class="section-order-content container" id="order">
     <div class="order-content" id="customer-order">
@@ -349,7 +358,7 @@
   </div>
 </section>
 
-    <section class="testimonials-section">
+      <section class="testimonials-section">
     <div class="testimonials-container container">
         <h2 class="main-title">Testimonials</h2>
         <ul class="testimonials-list">
@@ -416,8 +425,8 @@
         </ul>
     </div>
 </section>
-  </main>
-  <footer class="footer-page">
+    </main>
+    <footer class="footer-page">
     <div class="container footer-container">
         <ul class="footer-nav-list">
             <li class="footer-nav-item child-1">
@@ -440,14 +449,14 @@
 
 
 </footer>
-  <div class="overlay-menu">
+    <div class="overlay-menu js-menu-container" id="mobile-menu">
   <div class="mobile-tab-menu">
     <address class="mobile-tab-menu-address">
       <a class="mobile-menu-tel" href="tel:+380684439426"
         >+380 (68) 443-94-26
       </a>
     </address>
-    <button class="mobile-menu-btn-close" type="button">
+    <button class="mobile-menu-btn-close js-close-menu" type="button">
       <svg class="icon-close-mobile">
         <use href="/project-AmazingTeam-10/assets/symbol-defs-cf4f0bd7.svg#icon-close-menu"></use>
       </svg>
@@ -476,7 +485,12 @@
 </div>
 
 
-  
-</body>
-
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
 </html>
