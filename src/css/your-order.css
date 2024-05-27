@@ -17,18 +17,18 @@ ORDER
 }
 @media screen and (min-width: 768px) {
   .order-image-bg {
-    background-image: url(../images/order/Image-green-tablet1x.jpg);
+    background-image: url(/images/order/Image-green-tablet1x.jpg);
     height: 776px;
   }
 }
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .order-image-bg {
-    background-image: url(../images/order/Image-green-tablet@2x.jpg);
+    background-image: url(/images/order/Image-green-tablet@2x.jpg);
   }
 }
 @media screen and (min-width: 1280px) {
   .order-image-bg {
-    background-image: url(../images/order/Image-green-desktop1x.jpg);
+    background-image: url(/images/order/Image-green-desktop1x.jpg);
   }
 }
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
@@ -139,6 +139,9 @@ ORDER
     display: flex;
     flex-direction: column;
     gap: 100px;
+    background-image: url(/images/order/order-bg-tablet1x.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
   }
   .order-bg {
     display: block;
@@ -176,8 +179,9 @@ ORDER
     display: flex;
     flex-direction: row-reverse;
     padding-top: 150px;
-    padding-bottom: 150px;
+    padding-bottom: 0;
     gap: 50px;
+    background-image: url(/images/order/order-bg-decktop1x.png)
   }
   .order-bg {
     bottom: 150px;
@@ -188,5 +192,17 @@ ORDER
   }
   .order-submit:hover {
     border-color: #ecd979;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+ .section-order-content {
+    background-image: url(/images/order/order-bg-tablet@2x.png);
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+  .section-order-content {
+    background-image: url(/images/order/order-bg-decktop@2x.png);
   }
 }
