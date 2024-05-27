@@ -183,6 +183,9 @@ ORDER
     gap: 50px;
     background-image: url(/images/order/order-bg-decktop1x.png)
   }
+  .order-image {
+    width: 588px;
+  }
   .order-bg {
     bottom: 150px;
     left: 0;
@@ -194,7 +197,14 @@ ORDER
     border-color: #ecd979;
   }
 }
-
+/* @media screen and (min-width: 1440px) {
+  .order-text {
+    max-width: 666px;
+  }
+  .order-image {
+    width: 524px;
+  }
+} */
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
  .section-order-content {
     background-image: url(/images/order/order-bg-tablet@2x.png);
