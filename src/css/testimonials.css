@@ -2,6 +2,10 @@
     padding-bottom: 80px;
 }
 
+.testimonials-container {
+    padding-bottom: 80px;
+}
+
 
 .main-title {
     font-size: 32px;
@@ -75,16 +79,20 @@ position: relative;
     }
 
     .testimonials-card-text {
+        max-width: 300px;
         font-size: 16px;
-        width: 300px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 
 }
 
-@media screen and (min-width: 1110px) {
+@media screen and (min-width: 1280px) {
     .testimonials-section {
         padding-bottom: 150px;
     }
+
 
     .testimonials-list {
         gap: 26px;
@@ -97,14 +105,12 @@ position: relative;
         max-width: 343px;
     }
 
-
     .testimonials-list li:nth-child(3) {
         display: block;
     }
 
 
     .testimonials-card-text {
-        font-size: 16px;
         width: 307px;
     }
 
