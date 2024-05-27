@@ -1,81 +1,81 @@
-<section class="order-image-bg container"></section>
-<section class="section-order container" id="order">
-  <div class="order-content" id="customer-order">
-    <h2 class="order-text">
-      <span class="order-accent">Your order</span> is our priority: Personalized
-      approach and quality of service
-    </h2>
-    <form class="order-contacts">
-      <label for="order-name"
-        ><input
-          class="order-input"
-          type="text"
-          name="order-name"
-          id="order-name"
-          placeholder="Enter your full name"
-          required
-      /></label>
-
-      <label for="order-email">
-        <input
-          class="order-input"
-          type="email"
-          name="order-email"
-          id="order-email"
-          placeholder="Enter your email"
-          required
+<section class="section-order">
+  <div class="order-image-bg"></div>
+  <div class="section-order-content container" id="order">
+    <div class="order-content" id="customer-order">
+      <h2 class="order-text">
+        <span class="order-accent">Your order</span> is our priority: Personalized
+        approach and quality of service
+      </h2>
+      <form class="order-contacts">
+        <label for="order-name"
+          ><input
+            class="order-input"
+            type="text"
+            name="order-name"
+            id="order-name"
+            placeholder="Enter your full name"
+            required
+        /></label>
+        <label for="order-email">
+          <input
+            class="order-input"
+            type="email"
+            name="order-email"
+            id="order-email"
+            placeholder="Enter your email"
+            required
+          />
+        </label>
+        <textarea
+          class="order-comments"
+          name="order-comments"
+          placeholder="Comments"
+        ></textarea>
+        <button class="order-submit" type="submit">
+          Send
+          <svg class="icon-button-arrow" width="24" height="17">
+            <use href="/images/svg/symbol-defs.svg#icon-button-arrow"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div class="order-pictures">
+      <picture>
+        <source
+          srcset="/images/order/order-img-desktop1x.jpg  1x, /images/order/order-img-desktop@2x.jpg 2x"
+          media="(min-width: 1280px)"
         />
-      </label>
-      <textarea
-        class="order-comments"
-        name="order-comments"
-        placeholder="Comments"
-      ></textarea>
-    </form>
-
-    <button class="order-submit" type="submit">
-      Send
-      <svg class="icon-button-arrow" width="24" height="17">
-        <use href="/images/svg/symbol-defs.svg#icon-button-arrow"></use>
-      </svg>
-    </button>
-  </div>
-  <div class="order-pictures">
-    <picture>
-      <source
-        srcset="/images/order/order-img-desktop@2x.jpg 2x"
-        media="(min-width: 1280px)"
-      />
-      <source
-        srcset="
-          /images/order/order-img-tablet1x.jpg  1x,
-          /images/order/order-img-tablet@2x.jpg 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <img
-        src="/images/order/order-img-desktop1x.jpg"
-        alt="order-image"
-        class="order-image"
-      />
-    </picture>
-    <picture>
-      <source
-        srcset="/images/order/order-bg-decktop@2x.png 2x"
-        media="(min-width: 1280px)"
-      />
-      <source
-        srcset="
-          /images/order/order-bg-tablet1x.png  1x,
-          /images/order/order-bg-tablet@2x.png 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <img
-        class="order-bg"
-        src="/images/order/order-bg-decktop1x.png"
-        alt="order-bg"
-      />
-    </picture>
+        <source
+          srcset="
+            /images/order/order-img-tablet1x.jpg  1x,
+            /images/order/order-img-tablet@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img
+          src="/images/order/order-img-desktop1x.jpg"
+          alt="order-image"
+          class="order-image"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="/images/order/order-bg-decktop1x.png  1x, /images/order/order-bg-decktop@2x.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            /images/order/order-bg-tablet1x.png  1x,
+            /images/order/order-bg-tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img
+          class="order-bg"
+          src="/images/order/order-bg-decktop1x.png"
+          alt="order-bg"
+        />
+      </picture>
+    </div>
   </div>
 </section>
