@@ -3,8 +3,8 @@
   <div class="section-order-content container" id="order">
     <div class="order-content" id="customer-order">
       <h2 class="order-text">
-        <span class="order-accent">Your order</span> is our priority: Personalized
-        approach and quality of service
+        <span class="order-accent">Your order</span> is our priority:
+        Personalized approach and quality of service
       </h2>
       <form class="order-contacts">
         <label for="order-name"
@@ -14,6 +14,8 @@
             name="order-name"
             id="order-name"
             placeholder="Enter your full name"
+            pattern="[A-Za-z\s]+"
+            title="Petro Schur"
             required
         /></label>
         <label for="order-email">
@@ -23,6 +25,7 @@
             name="order-email"
             id="order-email"
             placeholder="Enter your email"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
             required
           />
         </label>
@@ -42,7 +45,10 @@
     <div class="order-pictures">
       <picture>
         <source
-          srcset="/images/order/order-img-desktop1x.jpg  1x, /images/order/order-img-desktop@2x.jpg 2x"
+          srcset="
+            /images/order/order-img-desktop1x.jpg  1x,
+            /images/order/order-img-desktop@2x.jpg 2x
+          "
           media="(min-width: 1280px)"
         />
         <source
