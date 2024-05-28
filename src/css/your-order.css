@@ -72,13 +72,14 @@ ORDER
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 .order-input {
   border: 1px solid rgba(252, 249, 249, 0.1);
   background-color: transparent;
   border-radius: 15px;
   padding: 14px 16px;
-  width: 335px;
+  width: 100%;
   height: 47px;
   font-size: 14px;
   font-weight: 400;
@@ -103,7 +104,7 @@ ORDER
   font-size: 14px;
   letter-spacing: -0.02em;
   padding: 14px 16px;
-  width: 335px;
+  width: 100%;
   height: 196px;
   outline: transparent;
   resize: none;
@@ -139,9 +140,10 @@ ORDER
     display: flex;
     flex-direction: column;
     gap: 100px;
-    background-image: url(/images/order/order-bg-tablet1x.png);
+    /* background-image: url(/images/bg-ornament/grey1x.png);
     background-repeat: no-repeat;
-    background-position: left bottom;
+    background-size: calc(55% - 447px) calc(60%);
+    background-position: left bottom; */
   }
   .order-bg {
     display: block;
@@ -166,7 +168,7 @@ ORDER
   .order-input,
   .order-comments {
     font-size: 16px;
-    width: 508px;
+    max-width: 508px;
   }
   .order-submit {
     margin-left: 0;
@@ -181,7 +183,6 @@ ORDER
     padding-top: 150px;
     padding-bottom: 0;
     gap: 50px;
-    background-image: url(/images/order/order-bg-decktop1x.png)
   }
   .order-image {
     width: 588px;
@@ -197,22 +198,8 @@ ORDER
     border-color: #ecd979;
   }
 }
-/* @media screen and (min-width: 1440px) {
-  .order-text {
-    max-width: 666px;
-  }
-  .order-image {
-    width: 524px;
+/* @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .section-order-content {
+    background-image: url(../images/bg-ornament/grey@2x.png);
   }
 } */
-@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
- .section-order-content {
-    background-image: url(/images/order/order-bg-tablet@2x.png);
-  }
-}
-
-@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
-  .section-order-content {
-    background-image: url(/images/order/order-bg-decktop@2x.png);
-  }
-}
