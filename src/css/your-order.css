@@ -52,6 +52,7 @@ ORDER
   align-items: flex-start;
   justify-content: flex-start;
   gap: 40px;
+  padding-top: 80px;
 }
 .order-text {
   max-width: 335px;
@@ -59,11 +60,6 @@ ORDER
   letter-spacing: -0.03em;
   font-size: 32px;
   line-height: 1.38;
-}
-@media screen and (max-width: 767px) {
-  .order-text {
-    margin-top: 80px;
-  }
 }
 .order-accent {
   color: #ecd979;
@@ -134,16 +130,21 @@ ORDER
   border-color: #ecd979;
 }
 @media screen and (min-width: 768px) {
+  .section-order {
+    background-image: url(/images/bg-ornament/grey1x.png);
+    background-repeat: no-repeat;
+    background-position-x: calc(50% - 335px);
+    background-position-y: calc(50% + 860px);
+    background-size: 545px 484px;
+  }
   .section-order-content {
-    padding-top: 100px;
     padding-bottom: 80px;
     display: flex;
     flex-direction: column;
     gap: 100px;
-    /* background-image: url(/images/bg-ornament/grey1x.png);
-    background-repeat: no-repeat;
-    background-size: calc(55% - 447px) calc(60%);
-    background-position: left bottom; */
+  }
+  .order-content {
+    padding-top: 100px;
   }
   .order-bg {
     display: block;
@@ -177,12 +178,19 @@ ORDER
   }
 }
 @media screen and (min-width: 1280px) {
+  .section-order {
+    background-position-x: calc(50% - 625px);
+    background-position-y: calc(50% + 540px);
+  }
   .section-order-content {
     display: flex;
     flex-direction: row-reverse;
     padding-top: 150px;
     padding-bottom: 0;
     gap: 50px;
+  }
+  .order-content {
+    padding-top: 0;
   }
   .order-image {
     width: 588px;
