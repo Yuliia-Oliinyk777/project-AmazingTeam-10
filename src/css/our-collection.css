@@ -1,3 +1,4 @@
+
 .section {
   padding-top: 18px;
   padding-bottom: 80px;
@@ -6,7 +7,7 @@
   background-position: calc(50% - 215px) calc(10%);
   background-size: 199px 177px;
 }
-
+ main
 .collection-title {
   font-size: 32px;
   font-weight: 500;
@@ -43,20 +44,20 @@
   color: rgba(252, 249, 249, 0.4);
 }
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+
   .section {
     background-image: url(../images/bg-ornament/yellow@2x.png);
-  }
 }
 /*------------------TABLET--------------*/
 
 @media screen and (min-width: 768px) {
+
   .section {
     padding-top: 50px;
     padding-bottom: 100px;
     background-image: url(../images/bg-ornament/yellow1x.png);
     background-position: calc(50% - 428px) calc(15%);
     background-size: 338px 300px;
-  }
 
   .collection-list {
     flex-wrap: wrap;
@@ -73,6 +74,7 @@
   }
 }
 @media screen and (min-resolution: 192dpi) {
+
   .section {
     background-image: url(../images/bg-ornament/yellow@2x.png);
   }
@@ -82,7 +84,9 @@
     padding-top: 70px;
     padding-bottom: 150px;
     background-image: url(../images/bg-ornament/yellow1x.png);
-    background-position: calc(50% - 641px) calc(20%);
+    background-position: calc(50% - 641px) calc(20%);}
+}
+
   }
   .collection-list {
     row-gap: 40px;
@@ -93,6 +97,7 @@
   }
 }
 @media screen and (min-resolution: 192dpi) {
+
   .section {
     background-image: url(../images/bg-ornament/yellow@2x.png);
   }

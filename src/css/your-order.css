@@ -1,10 +1,13 @@
+/* ========================================================================================================================================================
+ORDER
+======================================================================================================================================================== */
+
 .order-image-bg {
   min-width: 100%;
   height: 500px;
   background-image: url(/images/order/Image-green-mobile1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   margin: 0 auto;
 }
 @media screen and (min-resolution: 192dpi) {
@@ -14,18 +17,18 @@
 }
 @media screen and (min-width: 768px) {
   .order-image-bg {
-    background-image: url(../images/order/Image-green-tablet1x.jpg);
+    background-image: url(/images/order/Image-green-tablet1x.jpg);
     height: 776px;
   }
 }
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .order-image-bg {
-    background-image: url(../images/order/Image-green-tablet@2x.jpg);
+    background-image: url(/images/order/Image-green-tablet@2x.jpg);
   }
 }
 @media screen and (min-width: 1280px) {
   .order-image-bg {
-    background-image: url(../images/order/Image-green-desktop1x.jpg);
+    background-image: url(/images/order/Image-green-desktop1x.jpg);
   }
 }
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
@@ -34,19 +37,11 @@
   }
 }
 
-/* ========================================================================================================================================================
-ORDER
-======================================================================================================================================================== */
-
 .order-bg {
   display: none;
 }
-.section-order {
+.section-order-content {
   position: relative;
-  padding: 80px 20px;
-  display: flex;
-  gap: 50px;
-  overflow: hidden;
 }
 .order-image {
   display: none;
@@ -57,13 +52,14 @@ ORDER
   align-items: flex-start;
   justify-content: flex-start;
   gap: 40px;
+  padding-top: 80px;
 }
 .order-text {
   max-width: 335px;
   font-weight: 500;
   letter-spacing: -0.03em;
   font-size: 32px;
-  line-height: 1.375;
+  line-height: 1.38;
 }
 .order-accent {
   color: #ecd979;
@@ -72,6 +68,7 @@ ORDER
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 .order-input {
   border: 1px solid rgba(252, 249, 249, 0.1);
@@ -99,11 +96,11 @@ ORDER
   border: 1px solid rgba(252, 249, 249, 0.1);
   color: #fcf9f9;
   background-color: transparent;
-  border-radius: 15px;
+  border-radius: 8px;
   font-size: 14px;
   letter-spacing: -0.02em;
   padding: 14px 16px;
-  width: 335px;
+  width: 100%;
   height: 196px;
   outline: transparent;
   resize: none;
@@ -118,35 +115,43 @@ ORDER
   border: 1px solid rgba(252, 249, 249, 0.1);
   outline: none;
   border-radius: 15px;
-  padding: 14px 39px;
+  padding: 14px 36px;
   max-width: 145px;
   height: 50px;
+  margin-top: 20px;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: #fcf9f9;
   background-color: transparent;
-  cursor: pointer;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.order-submit:hover,
 .order-submit:focus {
   border-color: #ecd979;
 }
 @media screen and (min-width: 768px) {
   .section-order {
-    padding: 100px 32px 80px;
+    background-image: url(/images/bg-ornament/grey1x.png);
+    background-repeat: no-repeat;
+    background-position-x: calc(50% - 335px);
+    background-position-y: calc(50% + 860px);
+    background-size: 545px 484px;
+  }
+  .section-order-content {
+    padding-bottom: 80px;
     display: flex;
     flex-direction: column;
     gap: 100px;
+  }
+  .order-content {
+    padding-top: 100px;
   }
   .order-bg {
     display: block;
     position: absolute;
     z-index: -2;
     bottom: 0;
-    left: 0px;
+    left: 0;
   }
   .order-image {
     display: block;
@@ -164,22 +169,45 @@ ORDER
   .order-input,
   .order-comments {
     font-size: 16px;
-    width: 508px;
+    max-width: 508px;
   }
-  .order-submit { 
-    margin: 0;
+  .order-submit {
+    margin-left: 0;
+    font-size: 16px;
+    padding: 14px 39px;
   }
 }
 @media screen and (min-width: 1280px) {
-
   .section-order {
+    background-position-x: calc(50% - 625px);
+    background-position-y: calc(50% + 540px);
+  }
+  .section-order-content {
     display: flex;
     flex-direction: row-reverse;
-    padding: 100px 50px 150px;
+    padding-top: 150px;
+    padding-bottom: 0;
     gap: 50px;
+  }
+  .order-content {
+    padding-top: 0;
+  }
+  .order-image {
+    width: 588px;
   }
   .order-bg {
     bottom: 150px;
     left: 0;
   }
+  .order-submit {
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .order-submit:hover {
+    border-color: #ecd979;
+  }
 }
+/* @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .section-order-content {
+    background-image: url(../images/bg-ornament/grey@2x.png);
+  }
+} */
