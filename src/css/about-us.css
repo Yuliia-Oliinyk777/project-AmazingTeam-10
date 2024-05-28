@@ -1,6 +1,6 @@
 .about-us {
   padding-top: 40px;
-  padding-bottom: 60px;
+  padding-bottom: 62px;
   background-image: url(../images/bg-ornament/grey1x.png);
   background-repeat: no-repeat;
   background-position-x: calc(50% + 167px);
@@ -35,7 +35,7 @@
 @media screen and (min-width: 768px) {
   .about-us {
     padding-top: 50px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     background-size: 545px 484px;
     background-position-x: calc(50% + 286px);
     background-position-y: calc(50% + 260px);
