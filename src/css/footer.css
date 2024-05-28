@@ -1,11 +1,15 @@
-.footer-container {
+.footer-page {
   padding-top: 40px;
   padding-bottom: 282px;
   border-top: 1px solid rgba(252, 249, 249, 0.1);
-  background-image: url(../images/footer/footer-bg-mobile1x.png);
+  background-image: url(/images/bg-ornament/yellow1x.png);
   background-repeat: no-repeat;
   background-position: right bottom;
+  background-size: 452px 401px;
+  background-position-y: calc(50% + 343px);
+  background-position-x: center;
 }
+
 .footer-nav-list {
   display: grid;
   grid-template-columns: 116px 124px;
@@ -57,16 +61,17 @@
 }
 
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
-  .footer-container {
-    background-image: url(../images/footer/footer-bg-mobile@2x.png);
+  .footer-page {
+    background-image: url(/images/bg-ornament/yellow@2x.png);
   }
 }
 
 @media screen and (min-width: 768px) {
-  .footer-container {
+  .footer-page {
     padding-bottom: 40px;
-    background-image: url(../images/footer/footer-bg-tablet1x.png);
-    background-position: right top;
+    background-image: url(/images/bg-ornament/yellow1x.png);
+    background-position-x: calc(50% + 436px);
+    background-position-y: center;
   }
   .footer-nav-list {
     display: flex;
@@ -81,8 +86,8 @@
   }
 }
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
-  .footer-container {
-    background-image: url(../images/footer/footer-bg-tablet@2x.png);
+  .footer-page {
+    background-image: url(../images/bg-ornament/yellow@2x.png);
   }
 }
 @media screen and (min-width: 1280px) {
@@ -95,14 +100,16 @@
     max-width: 754px;
   }
   .footer-nav-link:hover {
-  color: #ecd979;
-}
-  .footer-container {
-    background-image: url(../images/footer/footer-bg-desktop1x.png);
+    color: #ecd979;
+  }
+  .footer-page {
+    background-image: url(../images/bg-ornament/yellow1x.png);
+    background-position-x: calc(50% + 510px);
+    background-position-y: center;
   }
 }
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
-  .footer-container {
-    background-image: url(../images/footer/footer-bg-desktop@2x.png);
+  .footer-page {
+    background-image: url(../images/bg-ornament/yellow@2x.png);
   }
 }
