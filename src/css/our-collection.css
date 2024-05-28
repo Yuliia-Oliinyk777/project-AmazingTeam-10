@@ -2,6 +2,8 @@
   padding-top: 18px;
   padding-bottom: 80px;
   background-image: url(/images/our-collection/our-collection-bg-mobile.png);
+  background-repeat: no-repeat;
+  background-position: left top;
 }
 .collection-title {
   font-size: 32px;
