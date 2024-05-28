@@ -1,4 +1,7 @@
 /*======= COMMON_STYLES =======*/
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Manrope', sans-serif;
   color: #fcf9f9;
