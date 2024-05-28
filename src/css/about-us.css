@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
-  padding-bottom: 80px;
+  padding-bottom: 62px;
   background-image: url(../images/about-us/about-us-bg-mobile.png);
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -29,7 +29,7 @@
 
 @media screen and (min-width: 768px) {
   .container-about-us {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     gap: 40px;
     background-image: url(../images/about-us/about-us-bg-tablet.png);
   }
@@ -44,6 +44,7 @@
 }
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .container-about-us {
+    padding-bottom: 80px;
     background-image: url(../images/about-us/about-us-bg-tablet@2x.png);
   }
 }
