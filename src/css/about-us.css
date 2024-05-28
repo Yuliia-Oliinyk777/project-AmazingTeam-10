@@ -1,15 +1,20 @@
+.about-us {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-image: url(../images/bg-ornament/grey1x.png);
+  background-repeat: no-repeat;
+  background-position-x: calc(50% + 167px);
+  background-position-y: calc(50% + 302px);
+  background-size: 459px 408px;
+}
 .container-about-us {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  padding-bottom: 62px;
-  background-image: url(../images/about-us/about-us-bg-mobile.png);
-  background-repeat: no-repeat;
-  background-position: right bottom;
 }
-@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
-  .container-about-us {
-    background-image: url(../images/about-us/about-us-bg-mobile@2x.png);
+@media (min-resolution: 192dpi) {
+  .about-us {
+    background-image: url(../images/bg-ornament/grey@2x.png);
   }
 }
 
@@ -28,10 +33,15 @@
 }
 
 @media screen and (min-width: 768px) {
+  .about-us {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background-size: 545px 484px;
+    background-position-x: calc(50% + 286px);
+    background-position-y: calc(50% + 260px);
+  }
   .container-about-us {
-    padding-bottom: 50px;
     gap: 40px;
-    background-image: url(../images/about-us/about-us-bg-tablet.png);
   }
   .about-title {
     font-size: 44px;
@@ -42,28 +52,24 @@
     font-size: 16px;
   }
 }
-@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
-  .container-about-us {
-    padding-bottom: 80px;
-    background-image: url(../images/about-us/about-us-bg-tablet@2x.png);
-  }
-}
 
 @media screen and (min-width: 1280px) {
+  .about-us {
+    padding-top: 75px;
+    padding-bottom: 80px;
+    background-position-x: calc(50% + 526px);
+    background-position-y: calc(50% + 107px);
+  }
   .container-about-us {
     flex-direction: row;
     gap: 50px;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 150px;
-    background-image: url(../images/about-us/about-us-bg-desktop.png);
   }
-  .container-text {
+  .about-text {
     width: 536px;
   }
-}
-@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
-  .container-about-us {
-    background-image: url(../images/about-us/about-us-bg-desktop@2x.png);
+  .about-one-paragraf {
+    width: 508px;
   }
 }
