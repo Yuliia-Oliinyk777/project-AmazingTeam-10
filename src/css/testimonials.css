@@ -65,7 +65,7 @@
   }
 
   .testimonials-card {
-  width: calc((100% - 32px * 1) / 2);
+    width: calc((100% - 32px) / 2);
   }
 
   .testimonials-card-text {
@@ -84,12 +84,11 @@
   }
 
   .testimonials-list {
-    justify-content: space-between;
     gap: 26px;
   }
 
   .testimonials-card {
-  width: calc((100% - 32px * 1) / 3);
+    width: calc((100% - 52px) / 3);
   }
 
   .testimonials-list li:nth-child(3) {
