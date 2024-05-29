@@ -4,7 +4,6 @@
   border-top: 1px solid rgba(252, 249, 249, 0.1);
   background-image: url(/images/bg-ornament/yellow1x.png);
   background-repeat: no-repeat;
-  background-position: right bottom;
   background-size: 452px 401px;
   background-position-y: calc(50% + 343px);
   background-position-x: center;
@@ -51,10 +50,6 @@
 
 .footer-span-text {
   color: #ecd979;
-}
-
-.footer-container {
-  position: relative;
 }
 .footer-nav-link:focus {
   color: #ecd979;
@@ -104,8 +99,8 @@
   }
   .footer-page {
     background-image: url(../images/bg-ornament/yellow1x.png);
-    background-position-x: calc(50% + 510px);
-    background-position-y: center;
+    background-position-x: calc(50% + 601px);
+    background-size: 595px 528px;
   }
 }
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
